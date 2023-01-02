@@ -1,0 +1,164 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+.main{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.head-h1{
+  color: #00e676;
+  margin: auto;
+  font-family: cursive;
+  font-size: 70px;
+  margin: 10px;
+}
+.head-p{
+  color: white;
+  font-size: 25px;
+  font-family: cursive;
+  margin: 20px;
+}
+.wallet-ctn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wallet-add{
+  color: #78909C;
+  font-family: cursive;
+}
+.input-head{
+  font-family: cursive;
+}
+.input-form{
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: medium;
+  background: transparent;
+  border:1px solid #00e676;
+  color: white;
+  margin: 10px 0px;
+}
+.btn-mod{
+  width: 200px;
+  padding: auto;
+  height: 60px;
+  border-radius: 15px;
+  font-size: medium;
+  color: black;
+  font-weight: 500;
+  background: #00e676;
+  font-family: cursive;
+  font-weight: 500;
+}
+.btn-mod:hover{
+  color: white;
+}
+.head{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.meet-container{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 90%;
+  margin: 20px;
+
+}
+.me{
+  width: 45%;
+  /* height: 300px; */
+
+}
+.peer{
+  width: 45%;
+  /* border: 1px solid #1de9b6; */
+  border-radius: 5px;
+  /* height: 300px; */
+
+}
+.me-video{
+  
+  width: 100%;
+  height: 100%;
+  border: 2px solid #00e676;
+  /* border-radius: 5px; */
+}
+
+.vid-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+.btn-sm-mod{
+width: 34px;
+height: 34px;
+margin: 10px;
+background: black;
+
+}
+.btn-sm-mod:hover{
+  transform: scale(1.2);
+}
+.btn-dis{
+  width:150px;
+  height: 30px;
+  border-radius: 8px;
+}
+.notification-title{
+  padding: 10px 5px;
+  color: white;
+  font-family: cursive;
+
+
+}
+.notification-body{
+  color: white;
+  font-family: cursive;
+  padding: 0 5px;
+}
+.notify{
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  border: 1px solid #00e676;
+  border-radius: 10px;
+  padding: 10px;
+  /* height: 50px;
+  width: 350px; */
+}
+.notif-btn{
+  margin: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.get-notif{
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: cursive;
+  font-size: 20px;
+
+}
