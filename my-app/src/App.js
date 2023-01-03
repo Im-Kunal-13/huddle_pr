@@ -60,12 +60,14 @@ const [peerMessage,setPeermessage] = useState("Waiting for user to Join in...")
     }
 
     async function connectWallet(){
-
-
         const signer = await getProviderOrSigner(true);
-        setAddress(await signer.getAddress());
+        const add = await signer.getAddress()
+        // console.log(typeof(add))
+        // console.log(toString(add))
+        // console.log(add)
+        setAddress(add);
         setWalletConnected(true);
-        console.log(signer);
+        // console.log(signer);
         
         }
 
@@ -80,16 +82,14 @@ const [peerMessage,setPeermessage] = useState("Waiting for user to Join in...")
         if(walletConnected){
             return(
                 <div className="wallet-ctn">
-
-                <p className="wallet-add">{address}</p>
-                <button className = "btn-mod btn-dis"onClick={disconnect}>disconnect wallet</button>
+                  <p className="wallet-add">{address}</p>
+                  <button className = "btn-mod btn-dis"onClick={disconnect}>disconnect wallet</button>
                 </div>
             )
         }
         else{
             return(
               <div>
-
                 <button className="btn-mod" onClick={connectWallet}>Connect Wallet</button>
               </div>
             )
@@ -116,19 +116,19 @@ const [peerMessage,setPeermessage] = useState("Waiting for user to Join in...")
   
     }
 
-    const handleToggleRoomLock = async () => {
-      if (!huddleClient) {
-        console.error('huddleClient is not initialized');
+    // const handleToggleRoomLock = async () => {
+    //   if (!huddleClient) {
+    //     console.error('huddleClient is not initialized');
   
-        return;
-      }
-      if(isJoined){
-      await huddleClient.toggleRoomLock();
-      console.log("toogled room lock")}
-      else{
-      console.log("is joined",isJoined)
-      console.log("cant toogle host not joined")}
-    };
+    //     return;
+    //   }
+    //   if(isJoined){
+    //   await huddleClient.toggleRoomLock();
+    //   console.log("toogled room lock")}
+    //   else{
+    //   console.log("is joined",isJoined)
+    //   console.log("cant toogle host not joined")}
+    // };
 
 
     const renderMeetContainer = () =>{
@@ -187,15 +187,15 @@ const [peerMessage,setPeermessage] = useState("Waiting for user to Join in...")
         console.log("notification: ",notifications)
       const rendered_not = notifications.map((oneNotification, i) => {
         const { 
-            cta,
+            // cta,
             title,
-            message,
-            app,
-            icon,
-            image,
-            url,
-            blockchain,
-            notification
+            message
+            // app,
+            // icon,
+            // image,
+            // url,
+            // blockchain,
+            // notification
         } = oneNotification;
     
         return (
@@ -241,7 +241,7 @@ const [peerMessage,setPeermessage] = useState("Waiting for user to Join in...")
                 },
                 payload: {
                   title: `8. call requested from ${await signer.getAddress()}`,
-                  body: `${message} [u:#join]`,
+                  body: `${message}`,
                   cta: "https://iframe.huddle01.com/123",
                   img: ''
                 },
@@ -284,12 +284,12 @@ const [peerMessage,setPeermessage] = useState("Waiting for user to Join in...")
           //   huddleClient.enableWebcam();
           // }
 
-          const iframeConfig = {
-            roomUrl: "https://iframe.huddle01.com/123",
-            height: "600px",
-            width: "80%",
-            noBorder: false, // false by default
-          };
+          // const iframeConfig = {
+          //   roomUrl: "https://iframe.huddle01.com/123",
+          //   height: "600px",
+          //   width: "80%",
+          //   noBorder: false, // false by default
+          // };
         // function renderIframe(){
         //   // connectWalleta()
         //   setIframe(true);
