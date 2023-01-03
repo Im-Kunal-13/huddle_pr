@@ -242,7 +242,7 @@ const [peerMessage,setPeermessage] = useState("Waiting for user to Join in...")
                 payload: {
                   title: `8. call requested from ${await signer.getAddress()}`,
                   body: `${message}`,
-                  cta: "https://iframe.huddle01.com/123",
+                  cta: "",
                   img: ''
                 },
                 recipients: `eip155:5:${recptAddress}`, // recipient address //get value from input box
