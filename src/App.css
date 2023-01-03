@@ -4,23 +4,23 @@
 
 }
 .main{
-  background-color: black;
+  background-color: #0f172a;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .head-h1{
-  color: #00e676;
+  color: #3b82f6;
   margin: auto;
-  font-family: cursive;
+  font-family: inherit;
   font-size: 70px;
   margin: 10px;
 }
 .head-p{
   color: white;
   font-size: 25px;
-  font-family: cursive;
+  font-family: inherit;
   margin: 20px;
 }
 .wallet-ctn{
@@ -32,10 +32,10 @@
 
 .wallet-add{
   color: #78909C;
-  font-family: cursive;
+  font-family: inherit;
 }
 .input-head{
-  font-family: cursive;
+  font-family: inherit;
 }
 .input-form{
   width: 200px;
@@ -44,7 +44,7 @@
   padding: 10px;
   font-size: medium;
   background: transparent;
-  border:1px solid #00e676;
+  border:1px solid #3b82f6;
   color: white;
   margin: 10px 0px;
 }
@@ -54,14 +54,14 @@
   height: 60px;
   border-radius: 15px;
   font-size: medium;
-  color: black;
+  color: white;
   font-weight: 500;
-  background: #00e676;
-  font-family: cursive;
+  background: #3b82f6;
+  font-family: inherit;
   font-weight: 500;
 }
 .btn-mod:hover{
-  color: white;
+  color: #0f172a;
 }
 .head{
   display: flex;
@@ -87,21 +87,33 @@
 }
 .me{
   width: 45%;
+  background: #1e293b;
   /* height: 300px; */
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
 }
 .peer{
-  width: 45%;
+  width: 50%;
   /* border: 1px solid #1de9b6; */
-  border-radius: 5px;
+  /* border-radius: 5px; */
+  background: #1e293b;
+  /* height: 300px; */
+  border-radius: 10px;
   /* height: 300px; */
 
 }
 .me-video{
   
-  width: 100%;
+  width: 90%;
+
   height: 100%;
-  border: 2px solid #00e676;
+  border: 2px solid #1e293b;
+  margin: 1.5rem;
+  /* border-radius: 10p; */
   /* border-radius: 5px; */
 }
 
@@ -114,7 +126,8 @@
 width: 34px;
 height: 34px;
 margin: 10px;
-background: black;
+background:#1e293b ;
+border: none;
 
 }
 .btn-sm-mod:hover{
@@ -128,20 +141,20 @@ background: black;
 .notification-title{
   padding: 10px 5px;
   color: white;
-  font-family: cursive;
+  font-family: inherit;
 
 
 }
 .notification-body{
   color: white;
-  font-family: cursive;
+  font-family: inherit;
   padding: 0 5px;
 }
 .notify{
   display: flex;
   flex-direction: column;
-  background-color: black;
-  border: 1px solid #00e676;
+  background-color: #1e293b;
+  /* border: 1px solid #3b82f6; */
   border-radius: 10px;
   padding: 10px;
   /* height: 50px;
@@ -158,7 +171,7 @@ background: black;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: cursive;
+  font-family: inherit;
   font-size: 20px;
 
 }

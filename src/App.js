@@ -111,6 +111,7 @@ const [peerMessage,setPeermessage] = useState("Waiting for user to Join in...")
     };
 
     function joinFromNotificaton(){
+      connectWallet()
       handleJoin();
       setIncall(true)
   
@@ -161,7 +162,7 @@ const [peerMessage,setPeermessage] = useState("Waiting for user to Join in...")
   
                   </div>
               <div className="peer">
-                {!peersKeys[0] && <h3>{peerMessage}</h3>}
+                {!peersKeys[0] && <h3 style={{margin:"1rem"}}>{peerMessage}</h3>}
                 {peersKeys[0] && <div className="me-video">
                   {peersKeys.map((key) => (
                     <PeerVideoAudioElem key={`peerId-${key}`} peerIdAtIndex={key} />
@@ -311,7 +312,7 @@ const [peerMessage,setPeermessage] = useState("Waiting for user to Join in...")
 
     <div className= "main">
       <div className= "head">
-            <h1 className= "head-h1">Caller</h1>
+            <h1 className= "head-h1">Callify</h1>
             <p className="head-p">A decentralized wallet to wallet video calling platform made using huddle01 and Push protocol</p>
             {renderButton()}
       </div>
