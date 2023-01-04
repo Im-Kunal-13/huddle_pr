@@ -211,7 +211,7 @@ const channelAddress = "0xD7D98e76FcD14689F05e7fc19BAC465eC0fF4161"
                   body: `[sdk-test] notification BODY Testing notification`
                 },
                 payload: {
-                  title: `8. call requested from ${await signer.getAddress()}`,
+                  title: ` call requested from ${await signer.getAddress()}`,
                   body: `${message}`,
                   cta: "",
                   img: ''
@@ -290,7 +290,7 @@ const channelAddress = "0xD7D98e76FcD14689F05e7fc19BAC465eC0fF4161"
       {walletConnected && subscribed && !incall && <div className="notification-section">
       <div className="get-notif">
             <p>Incoming calls..</p>
-            <button className= "btn-sm-mod custom" onClick={getNot} style = {{margin:"1rem"}}><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg></button>
+            <button className= "btn-sm-mod custom" onClick={getNot} style = {{margin:"1rem"}}><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="feather feather-bell"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg></button>
             {rendered[0]}
           </div> 
           <div className="form">
